@@ -1,0 +1,23 @@
+#include <stdio.h>
+
+int main() {
+    int num1, num2, soma, subtracao, multiplicacao, resto, divisao;
+    
+    printf("OPERACOES SOBRE INTEIROS");
+    printf("\nDigite o primeiro valor: ");
+    scanf("%d",&num1);
+    printf("Digite o primeiro valor: ");
+    scanf("%d",&num2);
+    soma = (num1 + num2);
+    subtracao = (num1 - num2);
+    multiplicacao = (num1 * num2);
+    divisao = (num1 / num2);
+    resto = (num1 % num2);
+    printf("%d + %d = %d",num1, num2, soma);
+    printf("\n%d - %d = %d",num1, num2, subtracao);
+    printf("\n%d * %d = %d",num1, num2, multiplicacao);
+    printf("\n%d / %d = %d",num1, num2, divisao);
+    printf("\n%d %% %d = %d",num1, num2, resto);
+
+    return 0;
+}

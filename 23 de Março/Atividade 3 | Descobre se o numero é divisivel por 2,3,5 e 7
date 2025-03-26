@@ -1,0 +1,34 @@
+#include <stdio.h>
+
+int main() {
+    int num1,num2,divisao2,divisao3,divisao5,divisao7;
+    
+    printf("Digite um numero: ");
+    scanf("%d",&num1);
+    
+    divisao2 = num1 % 2;
+    if(divisao2 == 0){
+        printf("\n%d é divisivel por 2",num1);
+    }else{
+        printf("\n%d não é divisivel por 2",num1);
+    }
+    divisao3 = num1 % 3;
+    if(divisao3 == 0){
+        printf("\n%d é divisivel por 3",num1);
+    }else{
+        printf("\n%d não é divisivel por 3",num1);
+    }
+    divisao5 = num1 % 5;
+    if(divisao5 == 0){
+        printf("\n%d é divisivel por 5",num1);
+    }else{
+        printf("\n%d não é divisivel por 5",num1);
+    }
+    divisao7 = num1 % 7;
+    if(divisao7 == 0){
+        printf("\n%d é divisivel por 7",num1);
+    }else{
+        printf("\n%d não é divisivel por 7",num1);
+    }
+    return 0;
+}

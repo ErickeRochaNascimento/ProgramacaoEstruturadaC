@@ -1,0 +1,21 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include <time.h>
+#include <conio.h>
+
+
+int main(){
+	long tm;
+	
+	printf("Este programa testa seu senso de tempo!\n");
+	printf("Quando estiver pronto, pressione a tecla return, espere cinco segundos\n"); 
+	printf("e pressione qualquer tecla: ");
+	getche();
+	
+	tm = time(0);
+	for (;;)
+		if (kbhit()) break;
+		
+	if(time (0)-tm==5) printf("Voce Venceu!!!!");
+	else printf("O seu sincronismo esta mal");
+}

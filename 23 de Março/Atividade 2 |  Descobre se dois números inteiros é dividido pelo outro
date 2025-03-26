@@ -1,0 +1,19 @@
+#include <stdio.h>
+
+int main() {
+    int num1,num2,divisao;
+    
+    printf("Digite um numero: ");
+    scanf("%d",&num1);
+    
+    printf("Digite um numero: ");
+    scanf("%d",&num2);
+    
+    divisao = num1 % num2;
+    if(divisao == 0){
+        printf("%d é divisivel por %d",num1,num2);
+    }else{
+        printf("%d não é divisivel por %d",num1,num2);
+    }
+    return 0;
+}
