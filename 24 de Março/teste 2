@@ -1,0 +1,42 @@
+#include <stdio.h>
+
+int main() {
+    float imprimeDivisaoReal;
+    int num1,num2,imprimeDivisaoInteira;
+    
+    printf("Calculadora");
+    printf("\nDigite seu Calculo: ");
+    scanf("%d%d", &num1, &num2);
+    
+    imprimeDivisaoReal = num1 / num2;
+    imprimeDivisaoInteira = num1 / num2;
+    
+   
+    
+    divisao = num1 % num2;
+    if(divisao == 0){
+        printf("%d é divisivel por %d",num1,num2);
+    }else{
+        printf("%d não é divisivel por %d",num1,num2);
+    }
+    
+    if(caractere == '/' && num2 == 0){
+        printf("Não é possível dividir por zero");
+    }else{
+        if(caractere == '/'){
+            printf("%f %c %f = %f",num1,caractere,num2,divisao);
+        }else{
+            if(caractere == '*'){
+                printf("%f %c %f = %f",num1,caractere,num2,multiplicacao);
+            }else{
+                if(caractere == '-'){
+                    printf("%f %c %f = %f",num1,caractere,num2,subtracao);
+                }else{
+                    printf("%f %c %f = %f",num1,caractere,num2,soma);
+                }
+                }
+            }
+    
+    
+    }
+

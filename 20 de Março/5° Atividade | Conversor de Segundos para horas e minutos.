@@ -1,0 +1,12 @@
+#include <stdio.h>
+
+int main() {
+    int segundos, minutos, horas;
+    printf("Convesor de Tempo");
+    printf("\nDigite segundos para tranforma em minutos e horas: ");
+    scanf("%d",&segundos);
+    minutos = (segundos / 60);
+    horas = (segundos / 3600);
+    printf("%d minutos\n%d segundos",minutos, horas);
+    return 0;
+}

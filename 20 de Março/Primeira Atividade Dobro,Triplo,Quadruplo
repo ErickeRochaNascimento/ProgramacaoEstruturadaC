@@ -1,0 +1,14 @@
+#include <stdio.h>
+
+int main() {
+    int x = 5, dobro,triplo,quadruplo;
+    
+    dobro = x * 2;
+    triplo = x * 3;
+    quadruplo = x * x;
+    printf("Try programiz.pro%d\n",dobro);
+    printf("Try programiz.pro%d\n",triplo);
+    printf("Try programiz.pro%d\n",quadruplo);
+
+    return 0;
+}

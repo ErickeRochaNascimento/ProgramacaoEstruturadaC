@@ -1,0 +1,30 @@
+#include <stdio.h>
+
+int main() {
+    int codigoProduto;
+    printf("Digite: ");
+    scanf("%d",&codigoProduto);
+    
+    if(codigoProduto >= 1 && codigoProduto <= 20){
+        printf("O produto é da Europa");
+    }else{
+        if(codigoProduto >= 21 && codigoProduto <= 40){
+            printf("O produto é da Ásia");
+        }else{
+            if(codigoProduto >= 41 && codigoProduto <= 60){
+                printf("O produto é da América");
+            }else{
+                if(codigoProduto >= 61 && codigoProduto <= 80){
+                    printf("O produto é da África");
+                }else{
+                    if(codigoProduto > 80){
+                        printf("O produto é do Paraguai");
+                    }else{
+                        printf("Codigo invalido");
+                    }
+                }
+            }
+        }
+    }
+    return 0;
+}

@@ -1,0 +1,11 @@
+#include <stdio.h>
+
+int main() {
+    float valorProduto, valorFinal;
+    printf("Digite o valor do produto:");
+    scanf("%f",&valorProduto);
+    valorFinal = (valorProduto * 0.95);
+    printf("O produto ficou por: %f",valorFinal);
+
+    return 0;
+}
