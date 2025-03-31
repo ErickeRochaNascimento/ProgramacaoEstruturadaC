@@ -1,0 +1,12 @@
+#include <stdio.h>
+
+int main() {
+    float tempCelsius, tempFahrenheit, tempKelvin;
+    printf("Escreva a Temperatura em Graus Celsius:");
+    scanf("%f",&tempCelsius);
+    tempFahrenheit = (9*tempCelsius+160)/5;
+    tempKelvin = (tempCelsius+273.15);
+    printf("Temperatura em Graus Fahrenheit:%f",tempFahrenheit);
+    printf("\nTemperatura em Graus Kelvin:%f",tempKelvin);
+    return 0;
+}

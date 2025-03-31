@@ -1,0 +1,11 @@
+#include <stdio.h>
+
+int main() {
+    int valor1,valor2;
+    printf("Digite os valores:");
+    scanf("%d%d",&valor1,&valor2);
+    printf("Valor 1: %d\n",valor2);
+    printf("Valor 2: %d\n",valor1);
+    return 0;
+    //Da eu alterei qual dado era salvo quando o fosse pedido ao usuario, sendo impresso o pedido do valor 1 e salvando no valor 2 e visse versa.
+}

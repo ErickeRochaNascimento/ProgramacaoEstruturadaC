@@ -1,0 +1,25 @@
+#include <stdio.h>
+
+int main() {
+    float preco,custo;
+    printf("Calculo valor dos produtos");
+    printf("\nDigite o valor: ");
+    scanf("%f",&custo);
+    
+    if(custo < 2){
+        preco = custo + 0.15;
+    }else{
+        if(custo >= 2 && custo < 5){
+            preco = custo * 102/100;
+        }else{
+            if(custo >= 5 && custo < 20){
+                preco = custo * 110/100;
+            }else{
+                preco = custo * 108/100;
+            }
+        }
+    }
+    printf("O preço final: %f",preco);
+
+    return 0;
+}

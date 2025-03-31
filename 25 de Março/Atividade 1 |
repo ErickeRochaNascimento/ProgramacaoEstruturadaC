@@ -1,0 +1,28 @@
+#include <stdio.h>
+
+int main() {
+    float numf1,numf2,imprimeDivisaoReal,divisao;
+    int num1,num2,imprimeDivisaoInteira;
+    
+    printf("Calculadora");
+    printf("\nDigite seu Calculo: ");
+    scanf("%d%d", &num1, &num2);
+    numf1 = num1;
+    numf2 = num2;
+    
+   
+    
+    if(num2 == 0){
+        printf("Não é possível dividir por zero");
+    }else{
+        imprimeDivisaoInteira = num1 / num2;
+        imprimeDivisaoReal = numf1 / numf2;
+        divisao = num1 % num2;
+        if(divisao == 0){
+        printf("%d / %d = %d",num1,num2,imprimeDivisaoInteira);
+    }else{
+        printf("%d / %d = %f",num1,num2,imprimeDivisaoReal);
+    }
+    }
+    return 0;
+}

@@ -1,0 +1,31 @@
+#include <stdio.h>
+
+
+
+int main() {
+    int prefixo,numero,duracao,emMinutos;
+    float valor;
+    
+    printf("Digite o numero. \nObs:Primeiro prefixo depois o numero.\n");
+    scanf("%d",&prefixo);
+    printf("Digite a duranção em segundos: ");
+    scanf("%d",&duracao);
+    
+    emMinutos = duracao / 60; 
+    
+    if(prefixo == 54 || prefixo == 598 || prefixo == 595 || prefixo == 56){
+        valor = 1.90 * emMinutos;
+    }else{
+        
+        if(prefixo == 49 || prefixo == 33 || prefixo == 44){
+            valor = 2.00 * emMinutos;
+        }else{
+            if(prefixo == 1){
+                valor = 2.30 * emMinutos;
+            }
+        }
+    }
+    printf("Custo: %f",valor);
+
+    return 0;
+}

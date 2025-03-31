@@ -1,0 +1,34 @@
+#include <stdio.h>
+
+int main() {
+    float num1,num2,multiplicacao,divisao,subtracao,soma;
+    char caractere;
+    
+    printf("Calculadora");
+    printf("\nDigite seu Calculo: ");
+    scanf("%f %c %f", &num1, &caractere, &num2);
+    
+    soma = num1 + num2;
+    subtracao = num1 - num2;
+    divisao = num1 / num2;
+    multiplicacao = num1 * num2;
+    
+    if(caractere == '/' && num2 == 0){
+        printf("Não é possível dividir por zero");
+    }else{
+        if(caractere == '/'){
+            printf("%f %c %f = %f",num1,caractere,num2,divisao);
+        }else{
+            if(caractere == '*'){
+                printf("%f %c %f = %f",num1,caractere,num2,multiplicacao);
+            }else{
+                if(caractere == '-'){
+                    printf("%f %c %f = %f",num1,caractere,num2,subtracao);
+                }else{
+                    printf("%f %c %f = %f",num1,caractere,num2,soma);
+                }
+                }
+            }
+    }
+    
+    }
